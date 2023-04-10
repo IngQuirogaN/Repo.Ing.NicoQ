@@ -1,0 +1,60 @@
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Tilt Prism', cursive;
+*/
+
+
+p {
+    margin-left: 50px;
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+
+h1 {
+    /*background-color: rgba(83, 96, 104, 0.568);*/
+    font-family: 'Tilt Prism', cursive;
+    font-size: 30px;
+    text-align: center;
+    border: 2.5px solid black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 1%, rgba(129, 129, 231, 0.7945553221288515) 25%, rgba(93, 152, 238, 1) 59%, rgba(71, 166, 242, 1) 82%, rgba(0, 212, 255, 1) 100%);
+}
+
+h2 {
+    /*background-color: rgba(57, 92, 116, 0.568);*/
+    font-family: 'Abril Fatface', cursive;
+    border: 2.5px solid black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(251deg, rgba(2, 0, 36, 1) 3%, rgba(129, 228, 231, 0.7945553221288515) 32%, rgba(93, 152, 238, 1) 61%, rgba(61, 183, 240, 1) 82%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.inf {
+    font-family: 'Righteous', cursive;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.exp{
+    column-count: 2;
+}
+
+#hiperv {
+    color: rgb(247, 39, 24);
+    font-weight: bold;
+    font-size: 25px;
+    border: 2.5px solid red;
+
+}
+
+#foto {
+    border: 2.5px solid black;
+    border-radius: 35%;
+    box-shadow: 14px 17px 22px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 17px 22px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 17px 22px 1px rgba(0, 0, 0, 0.75);
+}
