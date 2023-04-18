@@ -15,6 +15,7 @@
     justify-content: space-evenly;
     align-items: center;
     border: 2.5px solid black;
+    flex-direction: row-reverse;
 }
 .contenedor3{
     background-color: white;
