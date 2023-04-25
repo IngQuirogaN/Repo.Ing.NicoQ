@@ -39,7 +39,7 @@ aside {
 
 @media screen and (max-width: 800px){
 	#contenedor {
-		width: 800px;
+		width: 100%;
 		background: #8FA68E;
 		margin-right:0px;
 		margin-left:0px;
@@ -48,7 +48,7 @@ aside {
 	nav {
 		background: #dbb03b;
 		float: left;
-		width: 800px;
+		width: 100%;
 		line-height: 200%;
 	}
 	a {
@@ -59,13 +59,13 @@ aside {
 		background: #F1F2C0;
 		float: left;
 		margin: 0 0 0 0px;
-		width: 800px;
+		width: 100%;
 		border-top: 2.5px solid black;
 	}
 	aside {
 		background: #CCC59E;
 		float: left;
-		width: 800px;
+		width: 100%;
 		border-top: 2.5px solid black;
 	}
 	p {
