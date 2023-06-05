@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id='body' style=" background-color: aqua;display: flex;">
+    <div class="caja1">
+        <button id="boton1" style="width: 100px; height: 100px; background-color: red;margin: 5px;"></button></button>
+
+    </div>
+    <div class="caja2">
+        <button id="boton2" style="width: 100px; height: 100px; background-color: green;margin: 5px;"></button></button>
+
+    </div>
+    <div class="caja3">
+        <button id="boton3" style="width: 100px; height: 100px; background-color: blue;margin: 5px;"></button></button>
+
+    </div>
+    <script>
+        const boton1 = document.getElementById('boton1');
+        const boton2 = document.getElementById('boton2');
+        const boton3 = document.getElementById('boton3');
+        const body = document.getElementById('body');
+        boton1.addEventListener('click', function (e) {
+            body.style.backgroundColor = 'red'
+        }, false);
+        boton2.addEventListener('click', function (e) {
+            body.style.backgroundColor = 'green'
+        }, false);
+        boton3.addEventListener('click', function (e) {
+            body.style.backgroundColor = 'blue'
+        }, false);
+
+
+
+    </script>
+</body>
+
+</html>
