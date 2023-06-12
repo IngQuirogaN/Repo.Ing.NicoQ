@@ -14,6 +14,7 @@ const Contacto = (props) => {
                         <label for="nombre">Nombre</label>
                         <input type="text" name=""/>
                     </div>
+                    
                     <div>
                         <label for="apellido">Apellido</label>
                         <input type="text" name=""/>
