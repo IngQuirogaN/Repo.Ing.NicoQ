@@ -1,0 +1,79 @@
+.presentacion{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.presentacion div{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #EAA419;
+}
+.presentacion div p{
+    font-size: 130%;
+}
+.cuerpo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.mision{
+    
+    text-align: center;
+    animation-name: Animacion_mision;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.vision{
+    padding-left: 5%;
+    text-align: center;
+    animation-name: Animacion_vision;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+.politica{
+    padding-left: 5%;
+    text-align: center;
+    animation-name: Animacion_politica;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+h1{
+    font-family: "Space mono";
+    font-weight: bolder;
+}
+p{
+    font-family: "Space mono";
+    font-size: 120%;
+}
+@keyframes Animacion_mision {
+    from{background-color: #EAA419;font-size: 150%;}
+    to{background-color: white;font-size: 100%;}
+
+}
+@keyframes Animacion_vision {
+    33%{background-color: #EAA419;font-size: 150%;}
+    t0{background-color: white;font-size: 100%;}
+}
+@keyframes Animacion_politica {
+    66%{background-color: #EAA419;font-size: 150%;}
+    to{background-color: white;font-size: 100%;}
+}
+.ubicacion{
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.informacion{
+    padding-left: 100px;
+}
+.informacion p{
+    font-size: 140%;
+}
+footer {
+    background-color: #cccc;
+    clear: both;
+    color: black;
+    text-align: center;
+}

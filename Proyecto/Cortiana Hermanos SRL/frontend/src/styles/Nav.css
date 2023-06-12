@@ -1,0 +1,30 @@
+nav {
+    background: linear-gradient(267deg, #EAA419 30%, rgba(191, 139, 69, 0.93) 53%, #827878 71%);
+}
+
+nav ul {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: black;
+    font-family: "Space mono";
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    text-decoration-line: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}

@@ -1,0 +1,33 @@
+p{
+    margin-left: 50px;
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+h1{
+    background-color: rgba(83, 96, 104, 0.568);
+    font-size: 30px;
+    text-align: center;
+    border: 2.5px solid black;
+}
+h2{
+    background-color: rgba(57, 92, 116, 0.568);
+    font-family: Arial;
+    border: 2.5px solid black;
+}
+.inf{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+#hiperv{
+    color: rgb(247, 39, 24);
+    font-weight: bold;
+    font-size: 25px;
+    border: 2.5px solid red;
+
+}
+#foto{
+    border: 2.5px solid black;
+    border-radius: 35%;
+}

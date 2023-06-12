@@ -1,0 +1,35 @@
+h1{
+    background-color: rgba(74, 46, 97, 0.568);
+    font-size: 30px;
+    text-align: center;
+    border: 2.5px solid black;
+}
+h3{
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 30px;
+    
+}
+p{
+    margin-left: 30px;
+}
+.caja{
+    border: 2px dashed black;
+}
+#tel{
+    margin-left: 30px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#enviar{
+    background-color: rgba(11, 235, 22, 0.74);
+    border: 3px solid black;
+    font-weight: bold;
+}
+#borrar{
+    background-color: rgba(235, 11, 11, 0.74);
+    border: 3px solid black;
+    font-weight: bold;
+}
