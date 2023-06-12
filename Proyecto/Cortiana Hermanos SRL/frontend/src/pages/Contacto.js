@@ -1,7 +1,3 @@
-import '../styles/Contacto.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebook,faInstagram,faWhatsapp} from '@fortawesome/free-brands-svg-icons'
-
 const Contacto = (props) => {
 
     return(
@@ -42,9 +38,12 @@ const Contacto = (props) => {
             <div className="redes">
                 <h2>Nuestras Redes Sociales</h2>
                 <ul>
-                    <li><a href="https://www.facebook.com/cortianahnossrl"><FontAwesomeIcon icon={faFacebook} style={{width: 40+"px",scale: 200+"%"}} /></a></li>
-                    <li><a href="https://www.instagram.com/cortianahnossrl/"><FontAwesomeIcon icon={faInstagram}style={{width: 40+"px",scale: 200+"%"}}/></a></li>
-                    <li><a href="https://wa.me/541153773877"><FontAwesomeIcon icon={faWhatsapp}style={{width: 40+"px",scale: 200+"%"}}/></a></li>
+                    <li><a href="https://www.facebook.com/cortianahnossrl"><i className="fa-brands fa-facebook"
+                                style={{color: 'black'}}></i></a></li>
+                    <li><a href="https://www.instagram.com/cortianahnossrl/"><i className="fa-brands fa-instagram"
+                                style={{color: 'black'}}></i></a></li>
+                    <li><a href="https://wa.me/541153773877"><i className="fa-brands fa-whatsapp"
+                                style={{color: 'black'}}></i></a></li>
 
                 </ul>
                 <h2>Direccion</h2>

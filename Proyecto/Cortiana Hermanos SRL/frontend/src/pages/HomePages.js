@@ -1,6 +1,3 @@
-import '../styles/HomePage.css';
-
-
 const HomePage = (props) => {
 
     return (

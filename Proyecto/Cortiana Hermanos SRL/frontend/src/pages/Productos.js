@@ -1,5 +1,3 @@
-import '../styles/Producto.css';
-
 const Producto = (props) => {
 
     return (
