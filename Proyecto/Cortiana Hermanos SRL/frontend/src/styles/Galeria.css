@@ -1,0 +1,18 @@
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+}
+.galeria img{
+    margin: 20px;
+    border: 5px ridge #000;
+    transition: 2s;
+
+}
+.galeria img:hover{
+    transition: 2s;
+    scale: 1.5;
+
+}

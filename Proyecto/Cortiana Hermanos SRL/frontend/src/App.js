@@ -1,5 +1,6 @@
 
 import './App.css';
+
 import Header from "./components/layout/Header"
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
@@ -17,18 +18,18 @@ function App() {
       <Header></Header>
 
       <BrowserRouter>
-      <Nav></Nav>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="Nosotros" element={<NosotrosPage/>} />
-        <Route path="Productos" element={<ProductoPage/>} />
-        <Route path="Galeria" element={<GaleriaPage/>} />
-        <Route path="Contacto" element={<ContactoPage/>} />
+        <Nav></Nav>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="Nosotros" element={<NosotrosPage />} />
+          <Route path="Productos" element={<ProductoPage />} />
+          <Route path="Galeria" element={<GaleriaPage />} />
+          <Route path="Contacto" element={<ContactoPage />} />
 
-      </Routes>
+        </Routes>
       </BrowserRouter>
-      
-      <Footer></Footer>     
+
+      <Footer></Footer>
     </div>
   );
 }

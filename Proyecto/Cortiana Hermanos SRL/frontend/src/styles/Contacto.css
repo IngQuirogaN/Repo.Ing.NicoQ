@@ -1,0 +1,79 @@
+.main_contacto{
+    background: linear-gradient(267deg, #EAA419 30%, rgba(191, 139, 69, 0.93) 53%, #827878 71%);
+}
+.formulario_contacto{
+    margin-left: 30px;
+    padding-top: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(267deg, #EAA419 30%, rgba(191, 139, 69, 0.93) 53%, #827878 71%);
+}
+.formulario_contacto h2{
+    font-family: "Space mono";
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.formulario div{
+    margin: 5px;
+    padding-left: 10px;
+}
+.formulario label{
+    font-family: "Space mono";
+    text-align: center;
+    padding-right: 15px;
+}
+.formulario input{
+    padding-left: 10px;
+}
+.text_area label{
+   position: relative;
+   top: -170px;
+}
+.text_area textarea{
+    resize: none;
+}
+.boton input{
+    background-color: #EAA419;
+    font-family: "Space mono";
+    text-align: center;
+    position: relative;
+    width: 100px;
+    left: -80px;
+}
+.boton:hover{
+    scale: 1.1;
+}
+.redes{
+    margin-left: 400px;
+}
+.redes ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: top;
+}
+.redes ul li{
+    flex-grow: 1;        
+}
+.redes ul li i{
+display: flex;
+margin: 20px;
+margin-top: 10px;
+font-size: xx-large;
+text-decoration-line: none;
+}
+.redes ul li a{
+text-decoration-line: none;
+}
+.redes p{
+   text-align: center;
+}
