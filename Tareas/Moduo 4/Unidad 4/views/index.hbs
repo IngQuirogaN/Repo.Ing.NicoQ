@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+
+{{#if conocido}}
+    <p>El resultado es  {{resultado}}</p> <a href="/salir">Salir</a>
+{{/if}}
+
+{{#unless conocido}}
+    <p>No hay numeros</p>
+    <form action="/ingresar1" method="post">
+        <input type="text" name="numero2">
+        <select name="operacion" id="operacion">
+            <option value="suma">Sumar</option>
+            <option value="resta">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <input type="text" name="numero1"><button>Calcular</button>
+            
+    </form>
+
+{{/unless}}
