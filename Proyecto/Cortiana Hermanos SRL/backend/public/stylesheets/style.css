@@ -96,3 +96,56 @@ footer{
   background-color: #EAA419;
   text-align: center;
 }
+
+.main_contacto{
+  background: linear-gradient(267deg, #EAA419 30%, rgba(191, 139, 69, 0.93) 53%, #827878 71%);
+}
+.formulario_contacto{
+  margin-left: 30px;
+  padding-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(267deg, #EAA419 30%, rgba(191, 139, 69, 0.93) 53%, #827878 71%);
+}
+.formulario_contacto h2{
+  font-family: "Space mono";
+  font-weight: bolder;
+  text-align: center;
+  padding-left: 80px;
+}
+
+.formulario{
+  margin-top: 200px;
+  margin-bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario div{
+  margin: 5px;
+  padding-left: 10px;
+}
+
+.formulario label{
+  font-family: "Space mono";
+  text-align: center;
+  padding-right: 15px;
+  font-size: larger;
+}
+
+.formulario input{
+  padding-left: 10px;
+}
+
+button{
+  background-color: #EAA419;
+  font-family: "Space mono";
+  text-align: center;
+  position: relative;
+  width: 100px;
+
+}
+button:hover{
+  scale: 1.1;
+}

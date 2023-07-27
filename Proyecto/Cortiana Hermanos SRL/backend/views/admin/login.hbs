@@ -1,1 +1,25 @@
-<h1>Loguearse para continuar en la pagina de edicion</h1>
+<main className="main_contacto">
+    <div className="formulario_contacto">
+        <div>
+            <form action="/admin/login" method="post" class="formulario">
+                <div>
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" />
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="text" name="password" />
+                </div>
+                <div >
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+             {{#if error}}
+                <p>Usuario y/o contrasenia incorrectos</p>
+            {{/if}}
+           
+
+        </div>
+    </div>
+</main>
