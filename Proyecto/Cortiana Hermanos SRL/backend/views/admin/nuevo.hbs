@@ -1,0 +1,30 @@
+<main className="main_contacto">
+    <div className="formulario_contacto">
+        <div>
+            <h4>Agregar un nuevo producto</h4>
+            <form action="/admin/administrador/nuevo" method="post" class="formulario">
+                <div>
+                    <label for="tipo">Tipo</label>
+                    <input type="text" name="tipo" />
+                </div>
+
+                <div>
+                    <label for="clase">Clase</label>
+                    <input type="text" name="clase" />
+                </div>
+                <div>
+                    <label for="cuerpo">Descripcion</label>
+                    <textarea name="cuerpo" id="" cols="30" rows="10"></textarea>
+
+                </div>
+                <div>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+            {{#if error}}
+                <p>{{mensaje}}</p>
+            {{/if}}
+
+        </div>
+    </div>
+</main>

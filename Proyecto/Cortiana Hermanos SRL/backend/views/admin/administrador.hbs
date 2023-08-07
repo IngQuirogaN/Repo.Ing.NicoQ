@@ -1,5 +1,51 @@
-<h1>Sector Administrador</h1>
-<h2>Bienvenido {{user_admin}}</h2>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<div style="background-color:#EAA419;padding-top:30px;padding-bottom:30px;">
+    <h1>Sector Administrador</h1>
+</div>
+<div style="padding: 30px;">
+    <h2>Bienvenido {{user_admin}}</h2>
+</div>
+
+<div style="padding: 30px;">
+    <a class="btn btn-secondary" href="/admin/administrador/nuevo" style="background-color: green;"><i class="fa fa-plus"
+            aria-hidden="true"></i>Nuevo</a>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">#</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Clase</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each productos}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{tipo}}</td>
+                        <td>{{clase}}</td>
+                        <td>{{cuerpo}}</td>
+                        <td class="text-end">
+                            <a class="btn btn-secondary" href="" style="background-color: blue;"><i class="fa fa-pencil"
+                                    aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="" style="background-color: red;"><i class="fa fa-trash"
+                                    aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
 <div style="margin-bottom: 40px;margin-top:450px">
     <a href="/admin/login/logout"><button type="submit">Salir</button></a>
+
+
 </div>
