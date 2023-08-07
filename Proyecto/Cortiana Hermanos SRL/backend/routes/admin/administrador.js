@@ -41,4 +41,42 @@ router.post('/nuevo',async(req,res,next)=>{
 
 })
 
+
+router.get('/eliminar/:id',async (req,res,next)=>{
+    var id = req.params.id;
+    await productosModel.eliminarProducto(id);
+    res.redirect('/admin/administrador');
+
+});
+
+router.get('/modificar/:id',async(req, res, next)=>{
+    let id = req.params.id;
+    const producto = await productosModel.getProductoId(id);
+
+    res.render('admin/modificar',{
+        layout: 'admin/layout',
+        producto,
+        
+    });
+});
+
+router.post('/modificar', async(req, res, next)=>{
+    try{
+        let obj = {
+            tipo: req.body.tipo,
+            clase: req.body.clase,
+            cuerpo: req.body.cuerpo
+        }
+        
+        await productosModel.modificarProductoId(obj, req.body.id);
+        res.redirect('/admin/administrador');
+    }catch(error){
+        console.log(error)
+        res.render('admin/modificar',{
+            layout: 'admin/layout',
+            error: true, message: 'No se modifico el producto'
+        })
+    }
+})
+
 module.exports = router;
