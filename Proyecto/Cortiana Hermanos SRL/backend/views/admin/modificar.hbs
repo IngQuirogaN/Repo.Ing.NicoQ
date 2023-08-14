@@ -2,12 +2,13 @@
     <div className="formulario_contacto">
         <div>
             <h4>Modificar el producto</h4>
-            <form action="/admin/administrador/modificar" method="post" class="formulario">
-     
+            <form action="/admin/administrador/modificar" method="post" class="formulario"
+                enctype="multipart/form-data">
+
                 <input type="hidden" value="{{producto.id}}" name="id">
                 <div>
                     <label for="tipo">Tipo</label>
-                    <input type="text" name="tipo" value="{{producto.tipo}}"/>
+                    <input type="text" name="tipo" value="{{producto.tipo}}" />
                 </div>
 
                 <div>
@@ -16,15 +17,23 @@
                 </div>
                 <div>
                     <label for="cuerpo">Descripcion</label>
-                    <textarea name="cuerpo" id="" cols="30" rows="10" >{{producto.cuerpo}}</textarea>
+                    <textarea name="cuerpo" id="" cols="30" rows="10">{{producto.cuerpo}}</textarea>
 
+                </div>
+                <div>
+                    <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /></label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen
+                        actual?</label>
+                    <input type="hidden" name="img_original" value="{{producto.img_id}}">
                 </div>
                 <div>
                     <button type="submit">Guardar</button>
                 </div>
             </form>
             {{#if error}}
-                <p>{{mensaje}}</p>
+            <p>{{mensaje}}</p>
             {{/if}}
 
 

@@ -2,7 +2,7 @@
     <div className="formulario_contacto">
         <div>
             <h4>Agregar un nuevo producto</h4>
-            <form action="/admin/administrador/nuevo" method="post" class="formulario">
+            <form action="/admin/administrador/nuevo" method="post" class="formulario" enctype="multipart/form-data">
                 <div>
                     <label for="tipo">Tipo</label>
                     <input type="text" name="tipo" />
@@ -16,6 +16,10 @@
                     <label for="cuerpo">Descripcion</label>
                     <textarea name="cuerpo" id="" cols="30" rows="10"></textarea>
 
+                </div>
+                
+                <div>
+                    <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen"/></label>
                 </div>
                 <div>
                     <button type="submit">Guardar</button>

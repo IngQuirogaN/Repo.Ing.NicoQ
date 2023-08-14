@@ -7,31 +7,43 @@
 
 }
 .productos_intro div{
-    padding-left: 100px;
+    padding-left: 200;
+    align-items: center;
 }
 .productos_list{
+    
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    height: 340px;
-    border: 1px solid black;
+    height: 500;
+    border: 2px solid black;
+    
 }
 .productos_list div{
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    align-items: center;
+    
 }
 .productos_list div div{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    padding-left: 50px;
-    width: 50%;
+    width: 80%;
+    margin: 50;
+    padding-top: 5%;
+    align-items: center;
+    
+   
 }
+
 .productos_list div div h2{
     text-align: center;
+
 }
 .productos_list div div p{
     text-align: center;
 }
+
+    
 

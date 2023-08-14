@@ -1,6 +1,23 @@
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import ProductoItem from '../components/productos/ProductoItem';
 import '../styles/Producto.css';
 
-const Producto = (props) => {
+const Productos = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [productos, setProductos] = useState([]);
+
+    useEffect(() => {
+        const cargarProductos = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/productos');
+            setProductos(response.data);
+            setLoading(false);
+        };
+        cargarProductos();
+
+    }, []);
 
     return (
         <main>
@@ -20,58 +37,24 @@ const Producto = (props) => {
             </div>
             <div className="productos_list">
                 <div>
-                    <img src="images 7.jpg" width="300px" height="300px" style={{paddingTop: 20+'px'}} alt=""/>
-                        <div>
-                            <h2>Naranja X</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque adipisci aliquam
-                                distinctio
-                                nemo quam architecto deleniti sapiente eos quod assumenda, officiis accusamus natus consectetur
-                                omnis at soluta ducimus delectus.</p>
-                        </div>
-                </div>
-            </div>
-            <div className="productos_list">
-                <div>
-                    <img src="images 8..jpg" width="300px" height="300px" style={{paddingTop: 20+'px'}} alt=""/>
-                        <div>
-                            <h2>Naranja X2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque adipisci aliquam
-                                distinctio
-                                nemo quam architecto deleniti sapiente eos quod assumenda, officiis accusamus natus consectetur
-                                omnis at soluta ducimus delectus.</p>
-                        </div>
-                </div>
-            </div>
-            <div className="productos_list">
-                <div>
-                    <img src="images 10.jpg" width="300px" height="300px" style={{paddingTop: 20+'px'}} alt=""/>
-                        <div>
-                            <h2>Mandarina</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque adipisci aliquam
-                                distinctio
-                                nemo quam architecto deleniti sapiente eos quod assumenda, officiis accusamus natus consectetur
-                                omnis at soluta ducimus delectus.</p>
-                        </div>
-                </div>
-            </div>
-            <div className="productos_list">
-                <div>
-                    <img src="pomelo.jpg" width="300px" height="300px" style={{paddingTop: 20+'px'}} alt=""/>
-                        <div>
-                            <h2>Pomelo</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione atque adipisci aliquam
-                                distinctio
-                                nemo quam architecto deleniti sapiente eos quod assumenda, officiis accusamus natus consectetur
-                                omnis at soluta ducimus delectus.</p>
-                        </div>
+                    <div>
+                        {loading ? (
+                            <p>Cargando...</p>
+                        ) : (
+                            productos.map(item => <ProductoItem key={item.id}
+                                tipo={item.tipo} clase={item.clase} cuerpo={item.cuerpo} imagen={item.imagen} />)
+
+                        )}
+                    </div>
                 </div>
             </div>
 
         </main>
 
 
-    );
 
-}
+    )
 
-export default Producto;
+};
+
+export default Productos;
