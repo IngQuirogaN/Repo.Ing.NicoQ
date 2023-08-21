@@ -6,7 +6,7 @@ const ProductoItem = (props)=>{
     return(
         <div className="productos_list">
             <div>
-            <img src={imagen} height={400} width={700}/>
+            <img src={imagen} width={700}/>
             <div>
                 <h1>{tipo}</h1>
             </div>
